@@ -15,7 +15,7 @@ on:
 jobs:
   Compile:
 
-    runs-on: ubuntu-latest
+    runs-on: self-hosted
 
     steps:
     - uses: actions/checkout@v4
@@ -29,7 +29,7 @@ jobs:
       run: mvn compile
 
   Security-Check:
-    runs-on: ubuntu-latest
+    runs-on: self-hosted
 
     steps:
     - uses: actions/checkout@v4
